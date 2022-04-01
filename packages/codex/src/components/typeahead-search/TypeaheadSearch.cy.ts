@@ -22,7 +22,7 @@ it( 'shows the Search button when you click on the input', () => {
 		.should( 'be.visible' );
 } );
 
-it.only( 'fires a network request when typing with the queried values', () => {
+it( 'fires a network request when typing with the queried values', () => {
 //  Request URL: https://en.wikipedia.org/w/rest.php/v1/search/title?q=hello%20hkit&limit=10&
 	cy.intercept( '*/search/title?*' ).as( 'searchSpy' );
 	cy.get( inputSelector )
