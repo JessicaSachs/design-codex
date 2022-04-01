@@ -10,7 +10,7 @@
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
 		"lib": [ "esnext", "dom" ],
-		"types": [ "jest" ]
+		"types": ["cypress", "@testing-library/cypress"]
 	},
 	"include": [ "src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "build/**/*.ts", "./*.ts" ],
 	"exclude": [ "src/**/*.snap.ts" ]
